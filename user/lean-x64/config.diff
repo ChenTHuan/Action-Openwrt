@@ -19,7 +19,7 @@ CONFIG_TARGET_IMAGES_GZIP=y
 
 #设置分区大小
 CONFIG_TARGET_KERNEL_PARTSIZE=16
-CONFIG_TARGET_ROOTFS_PARTSIZE=1008
+CONFIG_TARGET_ROOTFS_PARTSIZE=2032
 
 #额外包
 
@@ -37,7 +37,7 @@ CONFIG_PACKAGE_wireguard-tools=m
 
 CONFIG_PACKAGE_aircard-pcmcia-firmware=m
 CONFIG_PACKAGE_amd64-microcode=m
-CONFIG_PACKAGE_amdgpu-firmware=y
+CONFIG_PACKAGE_amdgpu-firmware=n
 CONFIG_PACKAGE_ar3k-firmware=m
 CONFIG_PACKAGE_ath10k-firmware-qca4019=m
 CONFIG_PACKAGE_ath10k-firmware-qca4019-ct=m
@@ -63,11 +63,11 @@ CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct=m
 CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct-full-htt=m
 CONFIG_PACKAGE_ath10k-firmware-qca99x0-ct-htt=m
 CONFIG_PACKAGE_ath6k-firmware=m
-CONFIG_PACKAGE_ath9k-htc-firmware=y
+CONFIG_PACKAGE_ath9k-htc-firmware=n
 CONFIG_PACKAGE_b43legacy-firmware=m
 CONFIG_B43LEGACY_FW_SQUASH=y
 CONFIG_B43LEGACY_FW_SQUASH_COREREVS="1,2,3,4"
-CONFIG_PACKAGE_bnx2-firmware=y
+CONFIG_PACKAGE_bnx2-firmware=n
 CONFIG_PACKAGE_bnx2x-firmware=m
 CONFIG_PACKAGE_brcmfmac-firmware-4329-sdio=m
 CONFIG_PACKAGE_brcmfmac-firmware-43362-sdio=m
@@ -161,7 +161,7 @@ CONFIG_PACKAGE_rtl8822be-firmware=m
 CONFIG_PACKAGE_rtl8822ce-firmware=m
 CONFIG_PACKAGE_ti-3410-firmware=m
 CONFIG_PACKAGE_ti-5052-firmware=m
-CONFIG_PACKAGE_wireless-regdb=y
+CONFIG_PACKAGE_wireless-regdb=n
 CONFIG_PACKAGE_wl12xx-firmware=m
 CONFIG_PACKAGE_wl18xx-firmware=m
 
@@ -198,11 +198,11 @@ CONFIG_PACKAGE_luci-app-cshark=m
 CONFIG_PACKAGE_luci-app-ddns=m
 CONFIG_PACKAGE_luci-app-diag-core=m
 CONFIG_PACKAGE_luci-app-diskman=m
-CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=y
-CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=y
-CONFIG_PACKAGE_luci-app-diskman_INCLUDE_mdadm=y
-CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456=y
-CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linear=y
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs=n
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk=n
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_mdadm=n
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_raid456=n
+CONFIG_PACKAGE_luci-app-diskman_INCLUDE_kmod_md_linear=n
 CONFIG_PACKAGE_luci-app-dnscrypt-proxy=m
 CONFIG_PACKAGE_luci-app-dnsforwarder=m
 CONFIG_PACKAGE_luci-app-docker=m
@@ -331,7 +331,7 @@ CONFIG_PACKAGE_luci-app-unblockmusic=m
 # CONFIG_UnblockNeteaseMusic_Go is not set
 # CONFIG_UnblockNeteaseMusic_NodeJS is not set
 CONFIG_PACKAGE_luci-app-unbound=m
-CONFIG_PACKAGE_luci-app-upnp=m
+CONFIG_PACKAGE_luci-app-upnp=y
 CONFIG_PACKAGE_luci-app-usb-printer=m
 CONFIG_PACKAGE_luci-app-v2ray-server=m
 CONFIG_PACKAGE_luci-app-verysync=m
@@ -361,7 +361,7 @@ CONFIG_PACKAGE_luci-app-jd-dailybonus=n
 
 
 # 主题
-CONFIG_PACKAGE_luci-theme-darkmatter=y
+CONFIG_PACKAGE_luci-theme-darkmatter=n
 CONFIG_PACKAGE_luci-theme-argon-jerrykuku=m
 CONFIG_PACKAGE_luci-theme-argon-dark-mod=m
 CONFIG_PACKAGE_luci-theme-argon-light-mod=m
@@ -548,24 +548,24 @@ CONFIG_PACKAGE_iputils-traceroute6=y
 
 
 # 添加emmc支持
-CONFIG_kmod-sdhci=y
-CONFIG_kmod-mmc-spi=y
-CONFIG_KERNEL_MMC_SDHCI=y
-CONFIG_KERNEL_MMC_SDHCI_IO_ACCESSORS=y
-CONFIG_KERNEL_MMC_SDHCI_PCI=y
-CONFIG_KERNEL_MMC_RICOH_MMC=y
-CONFIG_KERNEL_MMC_SDHCI_PLTFM=y
-CONFIG_KERNEL_MMC_WBSD=y
-CONFIG_KERNEL_MMC_TIFM_SD=y
-CONFIG_KERNEL_MMC_CB710=y
-CONFIG_KERNEL_MMC_VIA_SDMMC=y
-CONFIG_KERNEL_MMC_VUB300=y
-CONFIG_KERNEL_MMC_USHC=y
-CONFIG_KERNEL_MMC_USDHI6ROL0=y
-CONFIG_KERNEL_MMC_CQHCI=y
-CONFIG_KERNEL_MMC_TOSHIBA_PCI=y
-CONFIG_KERNEL_MMC_MTK=y
-CONFIG_KERNEL_MMC_SDHCI_XENON=y
+CONFIG_kmod-sdhci=n
+CONFIG_kmod-mmc-spi=n
+CONFIG_KERNEL_MMC_SDHCI=n
+CONFIG_KERNEL_MMC_SDHCI_IO_ACCESSORS=n
+CONFIG_KERNEL_MMC_SDHCI_PCI=n
+CONFIG_KERNEL_MMC_RICOH_MMC=n
+CONFIG_KERNEL_MMC_SDHCI_PLTFM=n
+CONFIG_KERNEL_MMC_WBSD=n
+CONFIG_KERNEL_MMC_TIFM_SD=n
+CONFIG_KERNEL_MMC_CB710=n
+CONFIG_KERNEL_MMC_VIA_SDMMC=n
+CONFIG_KERNEL_MMC_VUB300=n
+CONFIG_KERNEL_MMC_USHC=n
+CONFIG_KERNEL_MMC_USDHI6ROL0=n
+CONFIG_KERNEL_MMC_CQHCI=n
+CONFIG_KERNEL_MMC_TOSHIBA_PCI=n
+CONFIG_KERNEL_MMC_MTK=n
+CONFIG_KERNEL_MMC_SDHCI_XENON=n
 
 #binfmt
 CONFIG_BINFMT_MISC=y
